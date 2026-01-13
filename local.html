@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>百度脑图 - 本地版</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            font-family: Arial, "Microsoft Yahei", "Heiti SC", sans-serif;
+        }
+        
+        /* 主容器样式 */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        h1 {
+            color: white;
+            font-size: 48px;
+            font-weight: 100;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+        
+        /* 按钮容器 */
+        .button-group {
+            display: flex;
+            gap: 20px;
+        }
+        
+        /* 按钮样式 */
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+        }
+        
+        .btn-secondary:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* 说明文字 */
+        .info {
+            margin-top: 40px;
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+            text-align: center;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        
+        .info-box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature-list {
+            text-align: left;
+            margin-top: 20px;
+        }
+        
+        .feature-list li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 百度脑图 - 本地版</h1>
+        <div class="subtitle">离线使用，无需登录</div>
+        
+        <div class="button-group">
+            <a href="dist/edit.html?nocheck" class="btn btn-primary">开始使用脑图</a>
+            <a href="viewshare.html" class="btn btn-secondary">查看分享页面</a>
+        </div>
+        
+        <div class="info">
+            <div class="info-box">
+                <div style="font-size: 16px; margin-bottom: 10px;">💡 使用提示</div>
+                <ul class="feature-list">
+                    <li>✅ 完全本地运行，数据保存在浏览器本地存储中</li>
+                    <li>✅ 支持思维导图的创建、编辑和导出</li>
+                    <li>✅ 支持多种布局和主题样式</li>
+                    <li>✅ 支持导出为图片、PDF、JSON 等格式</li>
+                    <li>⚠️ 云存储功能需要百度账号登录(在线版本)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
